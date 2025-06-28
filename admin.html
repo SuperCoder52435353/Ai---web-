@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli - Abduraxmon Intelligence</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 font-sans">
+    <div class="container mx-auto p-6">
+        <header class="bg-blue-900 text-white p-6 rounded-lg shadow-2xl mb-6">
+            <h1 class="text-3xl font-bold text-center">Admin Paneli - Abduraxmon Intelligence</h1>
+            <button onclick="logout()" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">Chiqish</button>
+        </header>
+
+        <main>
+            <section class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold mb-4 text-white">Foydalanuvchilar</h2>
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr class="bg-gray-700">
+                            <th class="border p-2">Ism</th>
+                            <th class="border p-2">Ro'yxatdan o'tgan</th>
+                            <th class="border p-2">Bloklangan</th>
+                            <th class="border p-2">Faollik</th>
+                            <th class="border p-2">Harakatlar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userList"></tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer class="mt-6 text-center text-gray-400">
+            <p>Powered by Abduraxmon</p>
+        </footer>
+    </div>
+
+    <div id="notification" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg"></div>
+
+    <script src="ai.js"></script>
+</body>
+</html>

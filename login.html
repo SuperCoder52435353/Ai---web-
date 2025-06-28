@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirish - Abduraxmon Intelligence</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 font-sans flex items-center justify-center h-screen">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-2xl w-full max-w-md">
+        <h1 class="text-3xl font-bold text-center mb-6 text-white">Abduraxmon Intelligence - Kirish</h1>
+        <div class="mb-4">
+            <label for="username" class="block font-medium text-gray-300">Foydalanuvchi nomi</label>
+            <input type="text" id="username" class="w-full p-2 border rounded bg-gray-700 text-white" placeholder="Ismingizni kiriting">
+        </div>
+        <div class="mb-4">
+            <label for="password" class="block font-medium text-gray-300">Parol</label>
+            <input type="password" id="password" class="w-full p-2 border rounded bg-gray-700 text-white" placeholder="Parolni kiriting">
+        </div>
+        <button onclick="login(document.getElementById('username').value, document.getElementById('password').value)" class="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Kirish</button>
+        <p class="mt-4 text-center text-gray-400">Admin paneliga kirish uchun <a href="admin.html" class="text-blue-500 hover:underline">bu yerni bosing</a>.</p>
+    </div>
+
+    <div id="notification" class="hidden fixed bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg"></div>
+
+    <script src="ai.js"></script>
+</body>
+</html>
